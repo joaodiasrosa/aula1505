@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.set {
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Alinhar imagem à direita */
+.imagem-direita {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+/* Alinhar imagem à esquerda */
+.imagem-esquerda {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+/* Limpar floats */
+.set::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Colunas lado a lado */
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna {
+    width: 48%;
+}
