@@ -1,49 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 40px;
+    line-height: 1.6;
 }
 
-.conteiner {
-    width: 80%;
-    margin: 0 auto;
+h1 {
+    color: #000;
+    margin-bottom: 20px;
 }
 
-.set {
-    margin: 20px 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Alinhar imagem à direita */
-.imagem-direita {
-    float: right;
-    margin: 0 0 10px 20px;
-}
-
-/* Alinhar imagem à esquerda */
-.imagem-esquerda {
-    float: left;
-    margin: 0 20px 10px 0;
-}
-
-/* Limpar floats */
-.set::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Colunas lado a lado */
-.box {
+.secao {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
-.coluna {
-    width: 48%;
+.secao img {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.secao .texto {
+    flex: 1;
+}
+
+.secao.invertida {
+    flex-direction: row;
+}
+
+.secao.invertida img {
+    margin-left: 0;
+    margin-right: 20px;
 }
